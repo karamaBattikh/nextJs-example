@@ -1,0 +1,22 @@
+{
+  "name": "nextjs-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/karamaBattikh/nextjs-example.git",
+  "author": "karamaBattikh <battikh.karama@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-react": "^7.21.3"
+  }
+}
