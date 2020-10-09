@@ -1,5 +1,6 @@
 import React from 'react'
 import App, { Container } from 'next/app'
+import 'static/resetCss.css'
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {

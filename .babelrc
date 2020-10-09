@@ -8,6 +8,12 @@
         "displayName": true,
         "preprocess": false
       }
-    ]
+    ],
+    ["module-resolver", {
+      "root": ["./src"],
+      "alias": {
+        "test": "./test"
+      }
+    }]
   ]
 }
