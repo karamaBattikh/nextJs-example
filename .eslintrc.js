@@ -1,16 +1,20 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   env: {
     es6: true,
     node: true,
+    browser: true,
   },
   extends: ['airbnb', 'eslint-config-prettier'],
   parserOptions: {
     ecmaVersion: 9,
     sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
-  plugins: ['prettier'],
+  plugins: ['prettier', 'react'],
   settings: {
     'import/resolver': {
       node: {
@@ -29,5 +33,10 @@ module.exports = {
     'react/jsx-filename-extension': 0,
     'react/jsx-props-no-spreading': 0,
     'no-param-reassign': 1,
+    'import/newline-after-import': 0,
+    'react/jsx-first-prop-new-line': [2, 'multiline'],
+    'object-shorthand': 1,
+    'arrow-parens': ['error', 'always'],
+    'react/require-default-props': 1,
   },
-}
+};
