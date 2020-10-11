@@ -1,12 +1,12 @@
-import React from 'react'
-import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
+import React from 'react';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
-    const originalRenderPage = ctx.renderPage
+    const originalRenderPage = ctx.renderPage;
     // Step 1: Create an instance of ServerStyleSheet
-    const sheet = new ServerStyleSheet()
+    const sheet = new ServerStyleSheet();
 
     try {
       ctx.renderPage = () =>
@@ -17,10 +17,10 @@ class MyDocument extends Document {
             sheet.collectStyles(<App {...props} />),
           //     useful for wrapping in a per-page basis
           //     enhanceComponent: (Component) => Component,
-        })
+        });
 
       // Run the parent `getInitialProps`, it now includes the custom `renderPage`
-      const initialProps = await Document.getInitialProps(ctx)
+      const initialProps = await Document.getInitialProps(ctx);
 
       // Step 3:  return Extraction the styles as <style> tags
       return {
@@ -31,9 +31,9 @@ class MyDocument extends Document {
             {sheet.getStyleElement()}
           </>
         ),
-      }
+      };
     } finally {
-      sheet.seal()
+      sheet.seal();
     }
   }
 
@@ -46,8 +46,8 @@ class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default MyDocument
+export default MyDocument;
