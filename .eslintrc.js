@@ -38,5 +38,6 @@ module.exports = {
     'object-shorthand': 1,
     'arrow-parens': ['error', 'always'],
     'react/require-default-props': 1,
+    'react/jsx-one-expression-per-line': 1,
   },
 };
