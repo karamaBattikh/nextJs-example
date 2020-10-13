@@ -8,7 +8,7 @@ module.exports = {
   pageExtensions: ['jsx', 'js'],
   webpack(config, options) {
     config.resolve.alias.components = path.join(__dirname, 'components');
-    config.resolve.alias.asset = path.join(__dirname, 'asset');
+    config.resolve.alias.static = path.join(__dirname, 'static');
     
     // // Add the new plugin to the existing webpack plugins
     // config.plugins = [

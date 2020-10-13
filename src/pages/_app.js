@@ -1,8 +1,8 @@
 import React from 'react';
 import App from 'next/app';
 import { ThemeProvider } from 'styled-components';
-import 'asset/css/resetCss.css';
-import theme from 'asset/css/theme';
+import 'static/css/resetCss.css';
+import theme from 'static/css/theme';
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
