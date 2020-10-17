@@ -9,6 +9,8 @@ module.exports = {
   webpack(config, options) {
     config.resolve.alias.components = path.join(__dirname, 'components');
     config.resolve.alias.static = path.join(__dirname, 'static');
+    config.resolve.alias.screens = path.join(__dirname, 'screens');
+    config.resolve.alias.shared = path.join(__dirname, 'shared');
     
     // // Add the new plugin to the existing webpack plugins
     // config.plugins = [

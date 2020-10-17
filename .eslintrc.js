@@ -25,6 +25,7 @@ module.exports = {
   rules: {
     'no-console': 1,
     'react/no-unused-prop-types': 0,
+    'react/react-in-jsx-scope': 'off',
     'max-len': ['error', { code: 100, ignoreUrls: true }],
     'no-var': 'error',
     'linebreak-style': 0,
@@ -39,5 +40,6 @@ module.exports = {
     'arrow-parens': ['error', 'always'],
     'react/require-default-props': 1,
     'react/jsx-one-expression-per-line': 1,
+    'react/prop-types': 0,
   },
 };

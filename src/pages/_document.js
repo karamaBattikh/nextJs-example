@@ -1,4 +1,3 @@
-import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
@@ -13,8 +12,7 @@ class MyDocument extends Document {
         originalRenderPage({
           // useful for wrapping the whole react tree
           // Step 2: Retrieve styles from components in the page
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
+          enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
           //     useful for wrapping in a per-page basis
           //     enhanceComponent: (Component) => Component,
         });
@@ -40,7 +38,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>{this.props.styleTags}</Head>
         <body>
           <Main />
           <NextScript />

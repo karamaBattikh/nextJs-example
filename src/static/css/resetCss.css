@@ -1,14 +1,54 @@
-html, body, div, span,
-h1, h2, h3, h4, h5, h6,
-p, a, img, b, u, i, center,
-ol, ul, li, form, label,
-table, tbody, tfoot, thead,
-tr, th, td, figure, select, option,
-footer, header, main,
-menu, nav, section, input{
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+b,
+u,
+i,
+center,
+ol,
+ul,
+li,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+figure,
+select,
+option,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+input {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
