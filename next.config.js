@@ -5,6 +5,7 @@ const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   /* config here */
+  distDir: '../.next',
   pageExtensions: ['jsx', 'js'],
   webpack(config, options) {
     config.resolve.alias.components = path.join(__dirname, 'components');
