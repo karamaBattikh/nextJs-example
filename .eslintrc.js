@@ -41,5 +41,6 @@ module.exports = {
     'react/require-default-props': 1,
     'react/jsx-one-expression-per-line': 1,
     'react/prop-types': 0,
+    'jsx-a11y/anchor-is-valid': 0,
   },
 };
