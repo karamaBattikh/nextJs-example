@@ -1,4 +1,10 @@
+import Home from 'screens/home';
+
 const HomePage = () => {
-  return <div> welcome to Next.js!</div>;
+  return (
+    <div>
+      <Home />
+    </div>
+  );
 };
 export default HomePage;

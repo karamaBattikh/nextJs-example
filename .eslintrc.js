@@ -38,9 +38,10 @@ module.exports = {
     'react/jsx-first-prop-new-line': [2, 'multiline'],
     'object-shorthand': 1,
     'arrow-parens': ['error', 'always'],
-    'react/require-default-props': 1,
+    'react/require-default-props': 0,
     'react/jsx-one-expression-per-line': 1,
     'react/prop-types': 0,
     'jsx-a11y/anchor-is-valid': 0,
+    'react/forbid-prop-types': 0,
   },
 };
