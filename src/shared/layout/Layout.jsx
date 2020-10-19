@@ -6,12 +6,14 @@ import Meta from 'shared/meta';
 import Header from 'components/header';
 
 const Layout = ({ children, router }) => {
-  const { pathname } = router;
+  const { pathname, asPath } = router;
+  const role = asPath.substring(1).split('/')[0];
+
   return (
     <ThemeProvider theme={theme}>
       <Meta />
       <GlobalStyle />
-      {pathname !== '/' && <Header />}
+      {pathname !== '/' && role && <Header role={role} />}
       {children}
       <div>footer</div>
     </ThemeProvider>
